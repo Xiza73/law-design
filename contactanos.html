@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/contactanos.css" />
+    <title>Blog</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-md">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <h2>Host <em>Cloud</em></h2>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarResponsive"
+            aria-controls="navbarResponsive"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item" routerLinkActive="active">
+                <a class="nav-link" href="index.html">Inicio </a>
+              </li>
+              <li class="nav-item" routerLinkActive="active">
+                <a class="nav-link" href="index.html">Sobre nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Nuestros servicios</a>
+              </li>
+              <li class="nav-item" routerLinkActive="active">
+                <a class="nav-link" href="contactanos.html">Contactanos</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="contact contacmarg">
+        <div class="container1">
+          <form id="contact" action="" onload="contactanos()">
+            <h3>Contactanos</h3>
+            <h4>Te responderemos en horario de 8:00 am - 4:00 pm!</h4>
+            <fieldset>
+              <input
+                id="form-name"
+                placeholder="Escribe aqui tu nombre"
+                type="text"
+                tabindex="1"
+                required
+                autofocus
+              />
+            </fieldset>
+            <fieldset>
+              <input
+                id="form-email"
+                placeholder="Escribe aqui tu correo electronico"
+                type="email"
+                tabindex="2"
+                required
+              />
+            </fieldset>
+            <fieldset>
+              <div class="d-flex align-items-center">
+                <p class="">+51</p>
+                <input
+                  id="form-phone"
+                  placeholder="Escribe aqui tu numero de celular"
+                  type="text"
+                  minlength="9"
+                  maxlength="9"
+                  onkeypress="return soloNumeros(event)"
+                  tabindex="3"
+                  required
+                />
+              </div>
+            </fieldset>
+            <fieldset>
+              <textarea
+                id="form-message"
+                placeholder="Escribe aqui tu mensaje..."
+                tabindex="5"
+                required
+              ></textarea>
+            </fieldset>
+            <fieldset>
+              <button name="contact" id="contact-submit">Enviar</button>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container-footer-all">
+        <div class="container-body">
+          <div class="column1">
+            <h1>Mas información</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore,
+              earum commodi! Autem, tempora vitae?
+            </p>
+          </div>
+          <div class="column2">
+            <h1>Redes Sociales</h1>
+
+            <div class="row">
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+              <label> Siguenos en Facebook</label>
+            </div>
+
+            <div class="row">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+              <label> Siguenos en Twitter</label>
+            </div>
+            <div class="row">
+              <i class="fa fa-google-plus" aria-hidden="true"></i>
+              <label> Siguenos en googl+</label>
+            </div>
+            <div class="row">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+              <label> Siguenos en Instagram</label>
+            </div>
+          </div>
+
+          <div class="column3">
+            <h1>Información Contactos</h1>
+
+            <div class="row2">
+              <i class="fa fa-home" aria-hidden="true"></i>
+              <label>Cercado De Lima</label>
+            </div>
+            <div class="row2">
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+              <label>123123@gmail.com</label>
+            </div>
+            <div class="row2">
+              <i class="fa fa-mobile-phone" aria-hidden="true"></i>
+              <label>986123123</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-footer">
+        <div class="copyright">
+          &copy; 2020 Todos los derechos Reservados |
+          <a href="index.html">
+            <img class="logobot" src="img/logo-1.png" alt="" />
+          </a>
+        </div>
+
+        <div class="informacion">
+          <a href="#"> Informacion Compañia </a> |
+          <a href="#">Privacidad y Política </a> |
+          <a href="#"> Terminós y Condiciones </a>
+        </div>
+      </div>
+    </footer>
+
+    <a
+      href="https://api.whatsapp.com/send?phone=51938263506&text=Hola%20quisiera%20informaci%C3%B3n%20sobre%20asesor%C3%ADa%20legal"
+      class="float"
+      target="_blank"
+    >
+      <i class="fa fa-whatsapp my-float"></i>
+    </a>
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/plugin-active.js"></script>
+    <script src="./js/jquery-3.2.1.min.js"></script>
+    <script src="./js/all-plugins.js"></script>
+    <script src="./js/contact.js"></script>
+    <script src="./js/header.js"></script>
+  </body>
+</html>
